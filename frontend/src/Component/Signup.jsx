@@ -21,7 +21,7 @@ const Signup = () => {
     e.preventDefault();
 
     // Fetching our API
-    const response = await fetch("http://localhost:3000/api/auth/createcustomer", {
+    const response = await fetch("https://movie-maestro-api.vercel.app/api/auth/createcustomer", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
