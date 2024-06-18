@@ -11,7 +11,7 @@ const Landing = () => {
   const { availableMovie, setavailableMovie, index, setIndex, setIndividualAvailableMovie } = context
 
   const fetchAvailableMovies = async () => {
-    const response = await fetch('http://localhost:3000/api/movie/getavailablemovies', {
+    const response = await fetch('https://movie-maestro-api.vercel.app/api/movie/getavailablemovies', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
