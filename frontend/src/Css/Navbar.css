@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Rajdhani&display=swap');
+
+body {
+    background-color: #f0f0f0;
+}
+
+#outer-nav {
+    width: 100%;
+    height: 7.5vh;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+nav h1 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2.8vw;
+    position: relative;
+}
+
+nav h1::before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1kcmFtYSI+PHBhdGggZD0iTTEwIDExaC4wMSIvPjxwYXRoIGQ9Ik0xNCA2aC4wMSIvPjxwYXRoIGQ9Ik0xOCA2aC4wMSIvPjxwYXRoIGQ9Ik02LjUgMTMuMWguMDEiLz48cGF0aCBkPSJNMjIgNWMwIDktNCAxMi02IDEycy02LTMtNi0xMmMwLTIgMi0zIDYtM3M2IDEgNiAzIi8+PHBhdGggZD0iTTE3LjQgOS45Yy0uOC44LTIgLjgtMi44IDAiLz48cGF0aCBkPSJNMTAuMSA3LjFDOSA3LjIgNy43IDcuNyA2IDguNmMtMy41IDItNC43IDMuOS0zLjcgNS42IDQuNSA3LjggOS41IDguNCAxMS4yIDcuNC45LS41IDEuOS0yLjEgMS45LTQuNyIvPjxwYXRoIGQ9Ik05LjEgMTYuNWMuMy0xLjEgMS40LTEuNyAyLjQtMS40Ii8+PC9zdmc+");
+    position: absolute;
+    left: -3vw;
+    top: 0.2vw;
+}
+
+nav div {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div h4 {
+    font-size: 1.5vw;
+    font-family: 'Rajdhani', sans-serif;
+    margin-right: 4vw;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#home::before {
+    content: "Home";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-in;
+    transform: translateY(-20vw);
+    color: #FFC300;
+}
+
+#home:hover::before {
+    transform: translateY(0vw);
+}
+
+#home:hover {
+    color: white;
+}
+
+#about::before {
+    content: "About";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-in;
+    transform: translateY(-20vw);
+    color: #FFC300;
+}
+
+#about:hover::before {
+    transform: translateY(0vw);
+}
+
+#about:hover {
+    color: white;
+}
+
+#service::before {
+    content: "Services";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-in;
+    transform: translateY(-20vw);
+    color: #FFC300;
+}
+
+#service:hover::before {
+    transform: translateY(0vw);
+}
+
+#service:hover {
+    color: white;
+}
+
+.nav-icon {
+    position: relative;
+    width: 5vw;
+    height: 5vw;
+}
+
+.nav-icon-over-on {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background-color: green;
+    border-radius: 100%;
+    top: 0.5vw;
+    right: 0.3vw;
+    animation: beeping 2s infinite forwards;
+}
+
+@keyframes beeping {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.nav-icon-over-off {
+    opacity: 0;
+    width: 0vw;
+    height: 0vw;
+}

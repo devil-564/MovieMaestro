@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Rajdhani&display=swap');
+
+#ticket-main-container{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+#user-container{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid rgba(22, 13, 13, 0.521);
+}
+
+#user-container span{
+    margin-top: 5vw;
+    width: 10vw;
+    border: 1px solid rgba(255, 251, 0, 0.322);
+    height: 40vh;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#user-container span h1{
+    font-size: 3vw;
+    transform: rotate(270deg);
+    letter-spacing: 1.5vw;
+    background-color: transparent;
+}
+
+#user-container span:hover{
+    background-color: rgba(255, 255, 0, 0.911);
+    height: 30vh;
+    border: 1px solid rgba(255, 255, 0, 0.555);
+}
+
+#ticket-container{
+    width: 70%;
+    height: 55vh; /* Set the desired height */
+    display: -webkit-box;
+    column-gap: 2vw;
+}
+
+/* #ticket-container::after{
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNhZTAwZmYiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wbGF5Ij48cG9seWdvbiBwb2ludHM9IjUgMyAxOSAxMiA1IDIxIDUgMyIvPjwvc3ZnPg==");
+
+    position: absolute;
+    top: 10vw;
+    right: 0vw;
+    z-index: 100;
+} */
+
+
+#ticket{
+    width: 38vw;
+    height: 23vw;
+    background-color: #ffff00;
+    border-radius: 1vw;
+    position: relative;
+    overflow-x: hidden; 
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+#ticket::after{
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    top: 8vw;
+    left: -2vw;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+}
+
+
+#ticket::before{
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    top: 8vw;
+    right: -2vw;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+}
+
+#cancel-btn{
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+}
+
+#ticket-section1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ticket-section1 img{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 100%;
+    margin-left: 4vw;
+}
+
+#ticket-section1 h1{
+    background-color: transparent;
+    color: black;
+    font-size: 2.2vw;
+}
+
+#ticket-section-seat-list{
+    font-size: 1.8vw;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 5vw;
+}
+
+#ticket-section2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+#ticket-section2 h1{
+    font-size: 1.8vw;
+    background-color: #ffff00;
+    letter-spacing: 0vw;
+}
+
+#logout-button{
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8vw;
+    top: 32vw;
+    right: 25vw;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+#logout-button::before{
+    content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxvZy1vdXQiPjxwYXRoIGQ9Ik05IDIxSDVhMiAyIDAgMCAxLTItMlY1YTIgMiAwIDAgMSAyLTJoNCIvPjxwb2x5bGluZSBwb2ludHM9IjE2IDE3IDIxIDEyIDE2IDciLz48bGluZSB4MT0iMjEiIHgyPSI5IiB5MT0iMTIiIHkyPSIxMiIvPjwvc3ZnPg==");
+    position: absolute;
+    z-index: 5;
+    left: -6vw;
+    top: -0.8vw;
+    transition: all 0.4s ease-in-out;
+}
+
+#logout-button:hover::before{
+    left: -3.5vw;
+}
+
+
+#alert-no-ticket-found{
+    position: relative;
+    top: 10vw;
+    font-size: 15vw;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: rgba(0, 0, 0, 0.966);
+    color: rgba(255, 255, 255, 0.596);
+}

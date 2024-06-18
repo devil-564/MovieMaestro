@@ -1,0 +1,62 @@
+#backArrowCont{
+    position : absolute ;
+    z-index: 5;
+    width: 10vw;
+    height: 4vw;
+    top: 1%;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+#backArrow{
+    transition: all 0.2s linear;
+    width: 2.5vw;
+    height: 2.5vw;
+    transform: scaleX(-1);
+}
+
+#backArrowCont:hover #backArrow{
+    transform: scaleX(1);
+}
+
+
+#backArrowCont::after{
+    content: "HOME";
+    color: rgb(255, 255, 255);
+    padding-top: 3px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2vw;    
+}
+
+/* #backArrow {
+        position : absolute ;
+        z-index: 5;
+        width: 3vw;
+        height: 3vw;
+        top: 1%;
+        left: 2%;
+} */
+
+/* #backArrow::after{
+    content: "Home";
+    color: gold;
+} */
+
+@media (max-width : 468px) {
+
+    #backArrowCont{
+        width: 20vw;
+        height : 15vw
+    }
+
+    #backArrow{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    #backArrowCont::after{
+        font-size: 6vw;
+    }
+}

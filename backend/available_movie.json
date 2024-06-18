@@ -1,0 +1,25 @@
+[
+    {
+        "title" : "Spider-Man: No Way Home",
+        "description" : "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+        "rating" : 8.2,
+        "genre" : ["Action", "Adventure", "Fantasy"],
+        "image" : ["https://wallpaperaccess.com/full/7826169.jpg", "https://wallpaperaccess.com/full/6790602.png"]
+    },
+    
+    {
+        "title" : "Avengers: Endgame",
+        "description" : "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+        "rating" : 8.4,
+        "genre" : ["Action", "Adventure", "Drama"],
+        "image" : ["https://wallpaperaccess.com/full/4358155.png","https://wallpaperaccess.com/full/1899977.jpg"]
+    },
+
+    {
+        "title" : "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
+        "description" : "After his family was brutally murdered and his sister turned into a demon, Tanjiro Kamado's journey as a demon slayer began. Tanjiro and his comrades embark on a new mission aboard the Mugen Train, on track to despair.",
+        "rating" : 8.1,
+        "genre" : ["Animation", "Action", "Adventure"],
+        "image" : ["https://wallpaperaccess.com/full/6425107.jpg", "https://wallpaperaccess.com/full/6292986.jpg"]
+    }
+]

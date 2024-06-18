@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+div img{
+    width: 100%;
+    filter: brightness(0.6);
+    height: 100svh;
+}
+
+#upper-container{
+    width: 50vw;
+    height: 20vw;
+    z-index: 3;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div span h1{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    font-size: 3vw;
+    background-color: white;
+    text-align: center;
+    width: 80%;
+}
+
+div span p{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2vw;
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    font-weight: 900;
+}
+
+button {
+    border: none;
+    padding: 20px 40px;
+    font-size: 44px;
+    position: relative;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-radius: 100px;
+    width: 30vw;
+    height: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  button:hover {
+    background: transparent;
+    color: #000;
+  }
+  .first,.second,.third,.fourth {
+    transition: all 0.7s;
+    z-index: -1;
+  }
+
+  button .first {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #ffa500;
+  }
+
+  button:hover .first {
+    top: 0;
+    right: 0;
+  }
+  button .second {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: -100%;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .second {
+    top: 0;
+    left: 50%;
+  }
+
+  button .third {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .third {
+    top: 0;
+    left: 25%;
+  }
+
+  button .fourth {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background: #ffa500;
+  }
+
+  button:hover .fourth {
+    top: 0;
+    left: 0;
+  }
+
+
+  @media (max-width: 1114px) {
+    div>img{
+      object-fit: cover;
+    }
+
+    #upper-container{
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      top: 0;
+    }
+
+    div>span>h1{
+      height: 20vw;
+      font-size: 8vw;
+    }
+
+    div>span>p{
+      font-size: 4vw;
+      height: 10vw;
+      margin-top: 1vw;
+    }
+
+    button{
+      margin-top: 1vw;
+      width: 65vw;
+      height: 15vw;
+      font-size: 5vw;
+    }
+
+  }

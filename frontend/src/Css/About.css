@@ -1,0 +1,98 @@
+#outer_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading_container{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading_container marquee{
+    font-size: 8vw;
+    color: rgba(255, 255, 255, 0.623);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1vw;
+}
+
+#outer_about_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner_about_us_container{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_us_container{
+    max-width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.301);
+    padding-right: 1vw;
+}
+
+#about_us_container h1{
+    font-size: 1.5vw;
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    text-align: left;
+}
+
+#about_us_container h1::first-letter{
+    font-size: 3vw;
+    color: #FFC300;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+#team_container{
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team_container h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+
+#team_container h2{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#team_container h2:hover{
+    letter-spacing: 0.3vw;
+}
+
+#team_container h2::first-letter{
+    color: #FFC300;
+    font-size: 3vw;
+    font-family: 'Rajdhani', sans-serif;
+}

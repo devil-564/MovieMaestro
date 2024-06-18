@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    background: #000000;
+    box-shadow:  -35px 35px 100px #000000,
+                 35px -35px 100px #000000;
+}
+
+#sub-container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+}
+
+#sub-container>div {
+    width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 90%;
+    filter: brightness(0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+#sub-container>div>h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    position: absolute;
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.493);
+    top: 22vw;
+    font-size: 8vw;
+    left: 5vw;
+    letter-spacing: 4vw;
+    transition: all 0.5s ease-in-out;
+}
+
+#admin-text {
+    left: 8vw !important;
+}
+
+#sub-container>div:hover h1 {
+    letter-spacing: 0.5vw;
+    color: white;
+}
+
+#sub-container>div:hover img {
+    filter: brightness(0.8);
+}
+
+@media (max-width : 480px) {
+    img{
+        object-fit: cover;
+        
+    }
+
+    #sub-container{
+        width: 95%;
+    }
+
+    #sub-container>div{
+        width: 100%;
+        height: 60%;
+    }
+
+    #sub-container>div>h1{
+        font-size: 11.5vw;
+        top: 40vw;
+        letter-spacing: 10evw;
+    }
+}
