@@ -46,7 +46,7 @@ const AdminAddMovie = () => {
   }
 
   const fetchAddMovie = async (title, description, rating, genre, image) => {
-    const response = await fetch("http://localhost:3000/api/movie/addmovie", {
+    const response = await fetch("https://movie-maestro-api.vercel.app/api/movie/addmovie", {
       method : "POST",
       headers : {
         'Content-Type' : 'application/json'
