@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import Loader from './Loader';
 
 const IndividualMovie = () => {
-  const host = "http://localhost:3000"
+  const host = "https://movie-maestro-api.vercel.app"
   const navigate = useNavigate()
 
   const context = useContext(EContext)
@@ -197,7 +197,7 @@ const IndividualMovie = () => {
 
   const checkout = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/stripe/charge", {
+      const res = await fetch(`${host}/api/stripe/charge`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
