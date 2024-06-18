@@ -4,7 +4,7 @@ import { useLocalStorage } from '@uidotdev/usehooks'
 
 const estate = (props) => {
 
-  const host = "http://localhost:3000"
+  const host = "https://movie-maestro-api.vercel.app"
   const [availableMovie, setavailableMovie] = useState([])
   const [index, setIndex] = useState(0)
   const [ticketPrice, setTicketPrice] = useState(0)
@@ -31,7 +31,7 @@ const estate = (props) => {
 
   useEffect(() => {
     const fetchAvailableMovies = async () => {
-      const response = await fetch('http://localhost:3000/api/movie/getavailablemovies', {
+      const response = await fetch(`${host}/api/movie/getavailablemovies`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
