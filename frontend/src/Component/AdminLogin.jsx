@@ -21,7 +21,7 @@ const AdminLogin = () => {
         e.preventDefault();
 
         // Fetching our API
-        const response = await fetch("http://localhost:3000/api/admin/loginadmin", {
+        const response = await fetch("https://movie-maestro-api.vercel.app/api/admin/loginadmin", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
