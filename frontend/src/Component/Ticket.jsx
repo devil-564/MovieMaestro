@@ -39,7 +39,7 @@ const Ticket = () => {
     if(check == 'Yes'){
 
         const deleteTicket = async () => {
-          const response = await fetch("http://localhost:3000/api/movie/deleteticket", {
+          const response = await fetch("https://movie-maestro-api.vercel.app/api/movie/deleteticket", {
             method : "POST",
             headers : {
               'Content-Type' : 'application/json'
