@@ -20,7 +20,7 @@ const AdminSignup = () => {
         e.preventDefault();
 
         // Fetching our API
-        const response = await fetch("http://localhost:3000/api/admin/createadmin", {
+        const response = await fetch("https://movie-maestro-api.vercel.app/api/admin/createadmin", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
