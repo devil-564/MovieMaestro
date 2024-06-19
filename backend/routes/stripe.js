@@ -33,8 +33,8 @@ router.post("/charge", async(req, res) => {
             quantity: item.quantity
           }
         }),
-        success_url: "http://localhost:5173/success",
-        cancel_url: "http://localhost:5173/cancel",
+        success_url: "https://movie-maestro-frontend.vercel.app/success",
+        cancel_url: "https://movie-maestro-frontend.vercel.app/cancel",
       })
   
     //   const save_pdf_purchase = await save_pdf(req.customer.id, session.id)
